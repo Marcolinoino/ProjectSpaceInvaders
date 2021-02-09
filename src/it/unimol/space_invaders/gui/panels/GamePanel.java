@@ -71,8 +71,8 @@ public class GamePanel extends JPanel {
             }
         }
         if (Level.getNumberLevel() == 1) {
-            BufferedImage icon = (ImageLoader.loadImage("alien.png"));
-            JOptionPane.showMessageDialog(null, ScreenComponent.getMessage(), "Space Invaders", JOptionPane.INFORMATION_MESSAGE, (Icon) icon);
+            ImageIcon icon = new ImageIcon("images/alien.png");
+            JOptionPane.showMessageDialog(null, ScreenComponent.getMessage(), "Space Invaders", JOptionPane.INFORMATION_MESSAGE, icon);
         }
 
         controller.resetController();
