@@ -16,10 +16,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set up JDK 1.12
+    - name: Set up JDK 1.11
       uses: actions/setup-java@v1
       with:
-        java-version: 1.12
+        java-version: 1.11
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: Space Invaders Project
@@ -34,10 +34,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set up JDK 1.12
+    - name: Set up JDK 1.11
       uses: actions/setup-java@v1
       with:
-        java-version: 1.12
+        java-version: 1.11
     - name: Build checkstyle
       run: mvn checkstyle:checkstyle
     - name: Checkstyle Space Invaders
@@ -52,10 +52,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set up JDK 1.12
+    - name: Set up JDK 1.11
       uses: actions/setup-java@v1
       with:
-        java-version: 1.12
+        java-version: 1.11
     - name: Build spotbugs
       run: mvn -B compile spotbugs:spotbugs
     - name: Spotbugs Space Invaders
